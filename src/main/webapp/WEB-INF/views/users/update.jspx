@@ -6,5 +6,7 @@
         <field:input field="email" id="c_com_xebia_wartelist_domain_User_email" required="true" validationMessageCode="field_invalid_email" z="BZRrmfquVuIthIA0VrU+h2pV+lU="/>
         <field:input field="name" id="c_com_xebia_wartelist_domain_User_name" required="true" z="dxyD5l7+QH2/f/XjZQcfnOcoYuY="/>
         <field:simple field="notification" id="c_com_xebia_wartelist_domain_User_notification" messageCode="entity_reference_not_managed" messageCodeAttribute="Notification" z="V/wpwg/A5bbuml2CKMsauZP38Bg="/>
+        <field:input field="password" id="c_com_xebia_wartelist_domain_User_password" required="true" z="BYNIPUwA8xRu/C6koYC13RV1G4g="/>
+        <field:input field="role" id="c_com_xebia_wartelist_domain_User_role" required="true" z="dzpfI2XKRnLOjJOFg+WBkXRaHTI="/>
     </form:update>
 </div>

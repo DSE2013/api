@@ -5,5 +5,7 @@
     <page:show id="ps_com_xebia_wartelist_domain_User" object="${user}" path="/users" z="3YY1rJ7vl9LaFjfjK50FrBI9jgo=">
         <field:display field="email" id="s_com_xebia_wartelist_domain_User_email" object="${user}" z="59PQRRCWiv+KxPCXTllulPh+eoU="/>
         <field:display field="name" id="s_com_xebia_wartelist_domain_User_name" object="${user}" z="cvOIu5SnvruCnlxgkjZOkJcLK+E="/>
+        <field:display field="password" id="s_com_xebia_wartelist_domain_User_password" object="${user}" z="K+JxaCgzEzShnVEhZ7YZYM3kXh0="/>
+        <field:display field="role" id="s_com_xebia_wartelist_domain_User_role" object="${user}" z="8itOWbDVUdS4/zgX2oc4hcxZO50="/>
     </page:show>
 </div>

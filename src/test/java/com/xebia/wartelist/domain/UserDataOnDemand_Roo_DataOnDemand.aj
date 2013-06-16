@@ -32,6 +32,8 @@ privileged aspect UserDataOnDemand_Roo_DataOnDemand {
         User obj = new User();
         setEmail(obj, index);
         setName(obj, index);
+        setPassword(obj, index);
+        setRole(obj, index);
         return obj;
     }
     
@@ -43,6 +45,16 @@ privileged aspect UserDataOnDemand_Roo_DataOnDemand {
     public void UserDataOnDemand.setName(User obj, int index) {
         String name = "name_" + index;
         obj.setName(name);
+    }
+    
+    public void UserDataOnDemand.setPassword(User obj, int index) {
+        String password = "password_" + index;
+        obj.setPassword(password);
+    }
+    
+    public void UserDataOnDemand.setRole(User obj, int index) {
+        String role = "role_" + index;
+        obj.setRole(role);
     }
     
     public User UserDataOnDemand.getSpecificUser(int index) {

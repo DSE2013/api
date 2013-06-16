@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @RooWebJson(jsonObject = OperationType.class)
 @Controller
-@RequestMapping("/operationtypes")
+@RequestMapping("/operation_types")
 @RooWebScaffold(path = "operationtypes", formBackingObject = OperationType.class)
 public class OperationTypeController {
 }

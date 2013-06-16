@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @RooWebJson(jsonObject = TimeSlot.class)
 @Controller
-@RequestMapping("/timeslots")
+@RequestMapping("/time_slots")
 @RooWebScaffold(path = "timeslots", formBackingObject = TimeSlot.class)
 public class TimeSlotController {
 }

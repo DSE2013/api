@@ -8,7 +8,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @RooWebJson(jsonObject = HospitalEmployee.class)
 @Controller
-@RequestMapping("/hospitalemployees")
+@RequestMapping("/hospital_employees")
 @RooWebScaffold(path = "hospitalemployees", formBackingObject = HospitalEmployee.class)
 public class HospitalEmployeeController {
+	
+	
+	
 }

@@ -17,12 +17,28 @@ privileged aspect User_Roo_JavaBean {
         this.email = email;
     }
     
+    public String User.getPassword() {
+        return this.password;
+    }
+    
+    public void User.setPassword(String password) {
+        this.password = password;
+    }
+    
     public String User.getName() {
         return this.name;
     }
     
     public void User.setName(String name) {
         this.name = name;
+    }
+    
+    public String User.getRole() {
+        return this.role;
+    }
+    
+    public void User.setRole(String role) {
+        this.role = role;
     }
     
     public Set<Notification> User.getNotification() {

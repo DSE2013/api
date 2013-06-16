@@ -254,7 +254,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<User, String> ApplicationConversionServiceFactoryBean.getUserToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<com.xebia.wartelist.domain.User, java.lang.String>() {
             public String convert(User user) {
-                return new StringBuilder().append(user.getEmail()).append(' ').append(user.getName()).toString();
+                return new StringBuilder().append(user.getEmail()).append(' ').append(user.getPassword()).append(' ').append(user.getName()).append(' ').append(user.getRole()).toString();
             }
         };
     }

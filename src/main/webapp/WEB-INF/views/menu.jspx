@@ -24,16 +24,16 @@
             <menu:item id="i_operation_list" messageCode="global_menu_list" url="/operations?page=1&amp;size=${empty param.size ? 10 : param.size}" z="7W8zR4c4k9qOargQyjMz3AFm4Ac="/>
         </menu:category>
         <menu:category id="c_timeslot" z="vPVDrtrs+D4d05Rd+2tFjFjkPgI=">
-            <menu:item id="i_timeslot_new" messageCode="global_menu_new" url="/timeslots?form" z="vri4xfPVjOHC5K10WHfBPwTxdis="/>
-            <menu:item id="i_timeslot_list" messageCode="global_menu_list" url="/timeslots?page=1&amp;size=${empty param.size ? 10 : param.size}" z="v6CQUABMRNWXNBhh1RRAQzBexsI="/>
+            <menu:item id="i_timeslot_new" messageCode="global_menu_new" url="/time_slots?form" z="user-managed"/>
+            <menu:item id="i_timeslot_list" messageCode="global_menu_list" url="/time_slots?page=1&amp;size=${empty param.size ? 10 : param.size}" z="user-managed"/>
         </menu:category>
         <menu:category id="c_operationtype" z="v/qNIiwZ5B9guvERzfvRV8/Rc6Q=">
-            <menu:item id="i_operationtype_new" messageCode="global_menu_new" url="/operationtypes?form" z="oS2ID+oDNKe10YV5XNx+NS9x9ws="/>
-            <menu:item id="i_operationtype_list" messageCode="global_menu_list" url="/operationtypes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="j4gLMW0yfAdVUyfxnDLM5WQ4/ws="/>
+            <menu:item id="i_operationtype_new" messageCode="global_menu_new" url="/operation_types?form" z="user-managed"/>
+            <menu:item id="i_operationtype_list" messageCode="global_menu_list" url="/operation_types?page=1&amp;size=${empty param.size ? 10 : param.size}" z="user-managed"/>
         </menu:category>
         <menu:category id="c_hospitalemployee" z="Nn7BfdAJCaH/pKOYZ55QGqFnuck=">
-            <menu:item id="i_hospitalemployee_new" messageCode="global_menu_new" url="/hospitalemployees?form" z="hSz7q4W3bMUhSavWzW7+UtloYnE="/>
-            <menu:item id="i_hospitalemployee_list" messageCode="global_menu_list" url="/hospitalemployees?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Rl3cpSEYumSRTz12JKijUFlCBPc="/>
+            <menu:item id="i_hospitalemployee_new" messageCode="global_menu_new" url="/hospital_employees?form" z="user-managed"/>
+            <menu:item id="i_hospitalemployee_list" messageCode="global_menu_list" url="/hospital_employees?page=1&amp;size=${empty param.size ? 10 : param.size}" z="user-managed"/>
         </menu:category>
         <menu:category id="c_notification" z="B8gnLr78HMcEHBns2jIZHdO6Ujg=">
             <menu:item id="i_notification_new" messageCode="global_menu_new" url="/notifications?form" z="dx0cs7x82Yp4ND+ACpJgJ7QcpXk="/>
