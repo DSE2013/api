@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_xebia_wartelist_domain_Operation" object="${operation}" path="/operations" z="G52rOeN9Eqvnf60MtJXt4b3d+Rw=">
+        <field:display field="timeslot" id="s_com_xebia_wartelist_domain_Operation_timeslot" object="${operation}" z="94T5GU2jhTFKNF+ulxoCH8oAFNY="/>
+        <field:display field="patient" id="s_com_xebia_wartelist_domain_Operation_patient" object="${operation}" z="1pE2fjmVJfuGYDhHiSUwSRwueow="/>
+        <field:display field="doctor" id="s_com_xebia_wartelist_domain_Operation_doctor" object="${operation}" z="HjOdNZEM+N/hgQDgRisbVaBeOvE="/>
+        <field:display field="operationtype" id="s_com_xebia_wartelist_domain_Operation_operationtype" object="${operation}" z="I/wabRmF8h4HyniI4NtZCalkHl0="/>
+    </page:show>
+</div>

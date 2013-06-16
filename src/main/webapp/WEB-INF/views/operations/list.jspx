@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_xebia_wartelist_domain_Operation" items="${operations}" z="EyzoX7yXckbxSn3/4n00EL54DYU=">
+        <table:table data="${operations}" id="l_com_xebia_wartelist_domain_Operation" path="/operations" z="+miw44cvLBF3wVmVR/pmRsXMNcI=">
+            <table:column id="c_com_xebia_wartelist_domain_Operation_timeslot" property="timeslot" z="+WlG56kSDjHyvgfpvn+61ncyhUw="/>
+            <table:column id="c_com_xebia_wartelist_domain_Operation_patient" property="patient" z="oXkmSzZ6boq7gqyLCHX1KXQOge0="/>
+            <table:column id="c_com_xebia_wartelist_domain_Operation_doctor" property="doctor" z="VHxiS23c7KqmgACk6JjB0YsvuLQ="/>
+            <table:column id="c_com_xebia_wartelist_domain_Operation_operationtype" property="operationtype" z="n/kw1d10xogaRdczi11PGBPwLWM="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_xebia_wartelist_domain_Patient" object="${patient}" path="/patients" z="Ulcu/6wN3oT+uoJdwvyV0HFoofI=">
+        <field:display field="ssn" id="s_com_xebia_wartelist_domain_Patient_ssn" object="${patient}" z="hxBrwiLyuvB5GCROvWx042/WbE0="/>
+        <field:display field="latitude" id="s_com_xebia_wartelist_domain_Patient_latitude" object="${patient}" z="csQIu+mmbuL7gmMUykQTr3GQ8mU="/>
+        <field:display field="longitude" id="s_com_xebia_wartelist_domain_Patient_longitude" object="${patient}" z="PUyJ6ave4QHfbkLshGVSnefW2Cs="/>
+        <field:display field="user1" id="s_com_xebia_wartelist_domain_Patient_user1" object="${patient}" z="yX2jiJtBo6eCnGhh/YbyBUz+hpA="/>
+    </page:show>
+</div>

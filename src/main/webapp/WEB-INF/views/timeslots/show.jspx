@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_xebia_wartelist_domain_TimeSlot" object="${timeslot}" path="/timeslots" z="eE2VAJYnnqHj1MX4G/6QPApMHtE=">
+        <field:display date="true" dateTimePattern="${timeSlot_startd_date_format}" field="startD" id="s_com_xebia_wartelist_domain_TimeSlot_startD" object="${timeslot}" z="XBNzPAfTbnmIk2vleA34/vWQsA4="/>
+        <field:display date="true" dateTimePattern="${timeSlot_endd_date_format}" field="endD" id="s_com_xebia_wartelist_domain_TimeSlot_endD" object="${timeslot}" z="CwSQ+ij5ZKMp8aOQrtJ1lpb2ASg="/>
+        <field:display field="hospital" id="s_com_xebia_wartelist_domain_TimeSlot_hospital" object="${timeslot}" z="F9/5f4f0XqOJlDlbXOtyt0tARbY="/>
+        <field:display field="operationtype" id="s_com_xebia_wartelist_domain_TimeSlot_operationtype" object="${timeslot}" z="6qWlNFJ+E4GokyqzJa6XDt7dHe0="/>
+        <field:display field="operation" id="s_com_xebia_wartelist_domain_TimeSlot_operation" object="${timeslot}" z="c72gUG06rTVd0GEzBlxUPwCokbg="/>
+    </page:show>
+</div>

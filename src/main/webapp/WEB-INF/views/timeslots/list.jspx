@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_xebia_wartelist_domain_TimeSlot" items="${timeslots}" z="gJ9QPWrSFX2ZpBLRJVxNYqwxE68=">
+        <table:table data="${timeslots}" id="l_com_xebia_wartelist_domain_TimeSlot" path="/timeslots" z="0ZEHCyGNOJeZXyMErO+0NbmUDkM=">
+            <table:column date="true" dateTimePattern="${timeSlot_startd_date_format}" id="c_com_xebia_wartelist_domain_TimeSlot_startD" property="startD" z="bFGnSZ6d2EFCDZ1aT6R1ZZe0uXo="/>
+            <table:column date="true" dateTimePattern="${timeSlot_endd_date_format}" id="c_com_xebia_wartelist_domain_TimeSlot_endD" property="endD" z="yO+Gdaa+Sc3Am+bQmmOKyZGpLsY="/>
+            <table:column id="c_com_xebia_wartelist_domain_TimeSlot_hospital" property="hospital" z="8xTO2V4pZqhLpwM+JD4PPjAEE5c="/>
+            <table:column id="c_com_xebia_wartelist_domain_TimeSlot_operationtype" property="operationtype" z="U+ILTjbPq4+zJNnhkQm/vTS/Kf8="/>
+            <table:column id="c_com_xebia_wartelist_domain_TimeSlot_operation" property="operation" z="qG7mA2eBcNNXyrOVCXHZUxRDu3A="/>
+        </table:table>
+    </page:list>
+</div>

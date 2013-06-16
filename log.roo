@@ -1,0 +1,103 @@
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-06-15 13:59:55
+project --topLevelPackage com.xebia.wartelist --projectName wartelist
+mongo setup --databaseName wartelist --host localhost --port 27017
+entity mongo --class ~.domain.OperationType --testAutomatically 
+entity mongo --class ~.domain.Operation --testAutomatically
+entity mongo --class ~.domain.TimeSlot --testAutomatically
+entity mongo --class ~.domain.Hospital --testAutomatically 
+entity mongo --class ~.domain.HospitalEmployee --testAutomatically
+entity mongo --class ~.domain.User --testAutomatically 
+entity mongo --class ~.domain.Patient --testAutomatically 
+entity mongo --class ~.domain.Doctor --testAutomatically 
+entity mongo --class ~.domain.Notification --testAutomatically 
+focus --class ~.domain.OperationType
+field string --fieldName name --notNull 
+focus --class ~.domain.TimeSlot
+field date --fieldName startD --type java.util.Date --notNull
+field date --fieldName endD --type java.util.Date --notNull
+focus --class ~.domain.Hospital
+field string --fieldName name --notNull 
+field number --type double --fieldName latitude --notNull
+field number --type double --fieldName longitude --notNull
+focus --class ~.domain.User
+field string --fieldName email --notNull
+field string --fieldName name --notNull 
+focus --class ~.domain.Patient
+field string --fieldName ssn --notNull
+field number --type double --fieldName latitude --notNull
+field number --type double --fieldName longitude --notNull
+focus --class ~.domain.Notification
+field string --fieldName title --notNull
+field string --fieldName message --notNull 
+field date --fieldName createdAt --type java.util.Date --notNull
+field date --fieldName updatedAt --type java.util.Date --notNull
+field boolean --fieldName displayed --notNull
+focus --class ~.domain.TimeSlot
+field reference --fieldName hospital --type ~.domain.Hospital
+field reference --fieldName operationtype --type ~.domain.OperationType
+field reference --fieldName operation --type ~.domain.Operation --cardinality ONE_TO_ONE 
+focus --class ~.domain.OperationType
+field set --fieldName timeslot --type ~.domain.TimeSlot --cardinality ONE_TO_MANY --mappedBy isfor
+field set --fieldName operation --type ~.domain.Operation --cardinality ONE_TO_MANY
+focus --class ~.domain.Hospital
+field set --fieldName timeslot --type ~.domain.TimeSlot --cardinality ONE_TO_MANY --mappedBy provides
+field set --fieldName hospitalemployee --type ~.domain.HospitalEmployee --cardinality ONE_TO_MANY --mappedBy worksat
+focus --class ~.domain.Operation
+field reference --fieldName timeslot --type ~.domain.TimeSlot --cardinality ONE_TO_ONE  --
+field reference --fieldName patient  --type ~.domain.Patient
+field reference --fieldName doctor  --type ~.domain.Doctor
+field reference --fieldName operationtype --type ~.domain.OperationType 
+// [failed] field reference --fieldName timeslot --type ~.domain.TimeSlot --cardinality ONE_TO_ONE  
+focus --class ~.domain.Doctor
+field set --fieldName operation --type ~.domain.Operation --cardinality ONE_TO_MANY --mappedBy reserves
+field reference --fieldName user1 --type ~.domain.User --cardinality ONE_TO_ONE
+focus --class ~.domain.User
+focus --class ~.domain.Notification
+// [failed] field reference --fieldName user --type ~.domain.User 
+focus --class ~.domain.HospitalEmployee
+field reference --fieldName user1 --type ~.domain.User --cardinality ONE_TO_ONE
+focus --class ~.domain.User
+field set --fieldName notification --type ~.domain.Notification --cardinality ONE_TO_MANY 
+focus --class ~.domain.Notification
+// [failed] field reference --fieldName user --type ~.domain.User 
+focus --class ~.domain.HospitalEmployee
+field reference --fieldName hospital --type ~.domain.Hospital 
+// [failed] field reference --fieldName user1 --type ~.domain.User --cardinality ONE_TO_ONE
+focus --class ~.domain.Patient
+field reference --fieldName user1 --type ~.domain.User --cardinality ONE_TO_ONE
+hint
+quit
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-06-15 14:09:50
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-06-15 14:09:56
+json all
+repository mongo --interface ~.repository.OperationTypeRepository --entity ~.domain.OperationType
+repository mongo --interface ~.repository.OperationRepository --entity ~.domain.Operation
+repository mongo --interface ~.repository.TimeSlotRepository --entity ~.domain.TimeSlot
+repository mongo --interface ~.repository.HospitalRepository --entity ~.domain.Hospital
+repository mongo --interface ~.repository.HospitalEmployeeRepository --entity ~.domain.HospitalEmployee 
+repository mongo --interface ~.repository.UserRepository --entity ~.domain.User
+repository mongo --interface ~.repository.PatientRepository --entity ~.domain.Patient
+repository mongo --interface ~.repository.DoctorRepository --entity ~.domain.Doctor
+repository mongo --interface ~.repository.NotificationRepository --entity ~.domain.Notification
+service --interface ~.service.OperationTypeService --entity ~.domain.OperationType
+service --interface ~.service.OperationService --entity ~.domain.Operation
+service --interface ~.service.TimeSlotService --entity ~.domain.TimeSlot
+service --interface ~.service.HospitalService --entity ~.domain.Hospital
+service --interface ~.service.HospitalEmployeeService --entity ~.domain.HospitalEmployee
+service --interface ~.service.UserService --entity ~.domain.User
+service --interface ~.service.PatientService --entity ~.domain.Patient
+service --interface ~.service.DoctorService --entity ~.domain.Doctor
+service --interface ~.service.NotificationService --entity ~.domain.Notification
+web mvc json setup
+web mvc json all --package ~.web
+quit
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-06-15 14:17:45
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-06-15 14:25:49
+web mvc setup 
+web mvc all --package ~.web
+quit
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-06-15 14:26:32
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-06-16 01:22:27
+security setup
+quit
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-06-16 01:23:59

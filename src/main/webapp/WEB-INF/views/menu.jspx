@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_user" z="uoTSf/uIZ821ZppidzS9aO776yk=">
+            <menu:item id="i_user_new" messageCode="global_menu_new" url="/users?form" z="Zv1m8u2rG+JFKcvJ+AHVVK0ey24="/>
+            <menu:item id="i_user_list" messageCode="global_menu_list" url="/users?page=1&amp;size=${empty param.size ? 10 : param.size}" z="4MY4uybxa60Q1G2rlI5bOwg+sm0="/>
+        </menu:category>
+        <menu:category id="c_patient" z="eF9KM9LmRl+DN4yo3LTRDZuTkik=">
+            <menu:item id="i_patient_new" messageCode="global_menu_new" url="/patients?form" z="/FWw96bQNbLZGfOq6+cGeWYQz8Y="/>
+            <menu:item id="i_patient_list" messageCode="global_menu_list" url="/patients?page=1&amp;size=${empty param.size ? 10 : param.size}" z="mnvxypr4za1eNqrO8/rSPpLv4/U="/>
+        </menu:category>
+        <menu:category id="c_doctor" z="VN2p5Aytuw4KpwEZ1rOV1dx/Zqo=">
+            <menu:item id="i_doctor_new" messageCode="global_menu_new" url="/doctors?form" z="H2mXVD1wm4YfgSXqE6cZxN76eww="/>
+            <menu:item id="i_doctor_list" messageCode="global_menu_list" url="/doctors?page=1&amp;size=${empty param.size ? 10 : param.size}" z="nlQosh9IBqyF4rLMv+ifW1gxGeE="/>
+        </menu:category>
+        <menu:category id="c_hospital" z="GmKVbDKQZAGcYq/cyofqT5ywMWA=">
+            <menu:item id="i_hospital_new" messageCode="global_menu_new" url="/hospitals?form" z="b3+x4cyFKd6MkEsQnu1exIIOKF0="/>
+            <menu:item id="i_hospital_list" messageCode="global_menu_list" url="/hospitals?page=1&amp;size=${empty param.size ? 10 : param.size}" z="eJhFH3vwQaNVNDARYEeYrR0KENw="/>
+        </menu:category>
+        <menu:category id="c_operation" z="q7oKKP7dYSVhqrsO2uTHdExMwj0=">
+            <menu:item id="i_operation_new" messageCode="global_menu_new" url="/operations?form" z="tDjD1Q1zzjUUkchJYbouGLD23Ss="/>
+            <menu:item id="i_operation_list" messageCode="global_menu_list" url="/operations?page=1&amp;size=${empty param.size ? 10 : param.size}" z="7W8zR4c4k9qOargQyjMz3AFm4Ac="/>
+        </menu:category>
+        <menu:category id="c_timeslot" z="vPVDrtrs+D4d05Rd+2tFjFjkPgI=">
+            <menu:item id="i_timeslot_new" messageCode="global_menu_new" url="/timeslots?form" z="vri4xfPVjOHC5K10WHfBPwTxdis="/>
+            <menu:item id="i_timeslot_list" messageCode="global_menu_list" url="/timeslots?page=1&amp;size=${empty param.size ? 10 : param.size}" z="v6CQUABMRNWXNBhh1RRAQzBexsI="/>
+        </menu:category>
+        <menu:category id="c_operationtype" z="v/qNIiwZ5B9guvERzfvRV8/Rc6Q=">
+            <menu:item id="i_operationtype_new" messageCode="global_menu_new" url="/operationtypes?form" z="oS2ID+oDNKe10YV5XNx+NS9x9ws="/>
+            <menu:item id="i_operationtype_list" messageCode="global_menu_list" url="/operationtypes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="j4gLMW0yfAdVUyfxnDLM5WQ4/ws="/>
+        </menu:category>
+        <menu:category id="c_hospitalemployee" z="Nn7BfdAJCaH/pKOYZ55QGqFnuck=">
+            <menu:item id="i_hospitalemployee_new" messageCode="global_menu_new" url="/hospitalemployees?form" z="hSz7q4W3bMUhSavWzW7+UtloYnE="/>
+            <menu:item id="i_hospitalemployee_list" messageCode="global_menu_list" url="/hospitalemployees?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Rl3cpSEYumSRTz12JKijUFlCBPc="/>
+        </menu:category>
+        <menu:category id="c_notification" z="B8gnLr78HMcEHBns2jIZHdO6Ujg=">
+            <menu:item id="i_notification_new" messageCode="global_menu_new" url="/notifications?form" z="dx0cs7x82Yp4ND+ACpJgJ7QcpXk="/>
+            <menu:item id="i_notification_list" messageCode="global_menu_list" url="/notifications?page=1&amp;size=${empty param.size ? 10 : param.size}" z="xPwgM2A9v5ucXchJVWWE6FN309c="/>
+        </menu:category>
+    </menu:menu>
+</div>

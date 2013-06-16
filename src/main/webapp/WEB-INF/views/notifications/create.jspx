@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_xebia_wartelist_domain_Notification" modelAttribute="notification" path="/notifications" render="${empty dependencies}" z="syzFO5Glcrof9Oz6tp9/1Ds4g5g=">
+        <field:input field="title" id="c_com_xebia_wartelist_domain_Notification_title" required="true" z="vKWfhvaUmd7H4PwLEOe5clgNXM0="/>
+        <field:input field="message" id="c_com_xebia_wartelist_domain_Notification_message" required="true" z="KOme42HcTGLZOAt3NElNzYiziM4="/>
+        <field:datetime dateTimePattern="${notification_createdat_date_format}" field="createdAt" id="c_com_xebia_wartelist_domain_Notification_createdAt" required="true" z="VG09XvS39WLsD5LdSh0mN3JZkn8="/>
+        <field:datetime dateTimePattern="${notification_updatedat_date_format}" field="updatedAt" id="c_com_xebia_wartelist_domain_Notification_updatedAt" required="true" z="obZSNQ1Vz7KlKhZvvMNEnLWDxEU="/>
+        <field:checkbox field="displayed" id="c_com_xebia_wartelist_domain_Notification_displayed" z="NaWN3dWwlLReRIhm9E/cmw4rNA0="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_xebia_wartelist_domain_Notification" render="${not empty dependencies}" z="j7S1Wly1PfsZWMM/DFOn67NAUG8="/>
+</div>

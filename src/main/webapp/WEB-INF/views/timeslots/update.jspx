@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_xebia_wartelist_domain_TimeSlot" modelAttribute="timeSlot" path="/timeslots" versionField="none" z="IgD9p3HW84jtQpVD973v6WS17NQ=">
+        <field:datetime dateTimePattern="${timeSlot_startd_date_format}" field="startD" id="c_com_xebia_wartelist_domain_TimeSlot_startD" required="true" z="cGfnmxIEntlaunADR0RedrvIDDo="/>
+        <field:datetime dateTimePattern="${timeSlot_endd_date_format}" field="endD" id="c_com_xebia_wartelist_domain_TimeSlot_endD" required="true" z="1rdB5TzXpU2IspCvTtqD/6ITH5I="/>
+        <field:select field="hospital" id="c_com_xebia_wartelist_domain_TimeSlot_hospital" itemValue="id" items="${hospitals}" path="/hospitals" z="wsn6JhElrSgMV6R6+6vf1xqNdjI="/>
+        <field:select field="operationtype" id="c_com_xebia_wartelist_domain_TimeSlot_operationtype" itemValue="id" items="${operationtypes}" path="/operationtypes" z="mbFy9GqJPkfLTEKjxhlPixoAXCk="/>
+        <field:select field="operation" id="c_com_xebia_wartelist_domain_TimeSlot_operation" itemValue="id" items="${operations}" path="/operations" z="3NG4nWG1EMNFRgy4KaYGXR2d4t4="/>
+    </form:update>
+</div>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_xebia_wartelist_domain_Notification" items="${notifications}" z="AqXmwdTjeAvrlvLHC+Kc7Qh75Z8=">
+        <table:table data="${notifications}" id="l_com_xebia_wartelist_domain_Notification" path="/notifications" z="NuAWPiAd1MXvw4RaJLsJAkt5E0E=">
+            <table:column id="c_com_xebia_wartelist_domain_Notification_title" property="title" z="U8KvRuUzzqpmo05iVWYhCb1oWaA="/>
+            <table:column id="c_com_xebia_wartelist_domain_Notification_message" property="message" z="qiK8527iiWWmn9bNqpkbt6g6mMU="/>
+            <table:column date="true" dateTimePattern="${notification_createdat_date_format}" id="c_com_xebia_wartelist_domain_Notification_createdAt" property="createdAt" z="ZdOegRczPur/toQSoqmgPnvQmUQ="/>
+            <table:column date="true" dateTimePattern="${notification_updatedat_date_format}" id="c_com_xebia_wartelist_domain_Notification_updatedAt" property="updatedAt" z="bFHJiIbkwSkNBUzsV4By5yk7rVc="/>
+            <table:column id="c_com_xebia_wartelist_domain_Notification_displayed" property="displayed" z="sqKJENhAEJfLNG3AZSHG76QBAqU="/>
+        </table:table>
+    </page:list>
+</div>
